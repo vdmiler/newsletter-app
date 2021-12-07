@@ -1,0 +1,27 @@
+.header {
+   padding: 45px 0;
+   .header__body {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .header__logo {
+         font-weight: 700;
+      }
+      .header__menu.menu {
+         .menu__list {
+            display: flex;
+            .menu__item:not(:last-child) {
+               margin-right: 35px;
+            }
+            .menu__item {
+               .menu__link {
+                  font-size: 18px;
+                  &.active {
+                     color: #004fec;
+                  }
+               }
+            }
+         }
+      }
+   }
+}

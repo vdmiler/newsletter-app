@@ -1,0 +1,16 @@
+._btn {
+   max-width: 190px;
+   width: 100%;
+   padding: 16px 0;
+   border-radius: 15px;
+   background-color: transparent;
+   border: 1px solid #004fec;
+   font-size: 16px;
+   color: #004fec;
+   text-align: center;
+   transition: all .5s ease;
+   &:hover {
+      background-color: #004fec;
+      color: #fff;
+   }
+}

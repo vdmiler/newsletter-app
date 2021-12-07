@@ -1,0 +1,91 @@
+/*-------------FONTS------------*/
+@font-face {
+font-family: 'ProximaNova';
+src: url('./fonts/ProximaNova-Regular.eot'); /* IE9 Compat Modes */
+src: url('./fonts/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+     url('./fonts/ProximaNova-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+     url('./fonts/ProximaNova-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+     url('./fonts/ProximaNova-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+     url('./fonts/ProximaNova-Regular.svg#svgFontName') format('svg'); /* Legacy iOS */
+font-weight: 400;
+}
+
+@font-face {
+font-family: 'ProximaNova';
+src: url('./fonts/ProximaNova-Bold.eot'); /* IE9 Compat Modes */
+src: url('./fonts/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+     url('./fonts/ProximaNova-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+     url('./fonts/ProximaNova-Bold.woff') format('woff'), /* Pretty Modern Browsers */
+     url('./fonts/ProximaNova-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+     url('./fonts/ProximaNova-Bold.svg#svgFontName') format('svg'); /* Legacy iOS */
+font-weight: 700;
+}
+
+body {
+	font-family: 'ProximaNova', sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 1.2em;
+	color: #333d51;
+	padding: 0;
+	margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+div, p, form, input, a, span, button {
+	box-sizing: border-box;
+}
+
+ul, li {
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+
+._container {
+  max-width: 1110px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+h1, h2 {
+	margin: 0;
+}
+
+h1 {	
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 0.9em;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 25px;
+}
+
+a {
+	text-decoration: none;
+	color: #333d51;
+  transition: all .5s ease;
+  &:hover,
+  &._active {
+    color: #004fec;
+  }
+}
+
+
+.template__date {
+  color: rgba(51, 61, 81, 0.5);
+  .template__day {
+     font-size: 30px;
+     color: #333d51;
+  }
+  .template__separator{
+     margin: 0 7px;
+  }
+  .template__month {
+  }
+}

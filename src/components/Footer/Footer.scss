@@ -1,0 +1,19 @@
+.footer {
+   padding: 45px 0;
+   .footer__body {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .footer__caption {
+         font-weight: 700;
+         font-size: 25px;
+      }
+      .footer__sign {
+         font-size: 12px;
+         line-height: 1.2em;
+      }
+      .footer__diploma {
+         font-size: 15px;
+      }
+   }
+}

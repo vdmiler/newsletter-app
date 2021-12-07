@@ -1,0 +1,31 @@
+.detail {
+   margin: 90px 0;
+   .detail__body {
+      display: flex;
+      justify-content: space-between;
+      .detail__caption {
+         max-width: 350px;
+         width: 100%;
+         .detail__title {
+            font-size: 50px;
+         }
+         .detail__source {
+            display: inline-block;
+            font-size: 25px;
+            color: rgba(51, 61, 81, 0.5);
+            margin: 30px 0;
+         }
+         .detail__date {
+         }
+      }
+      .detail__description {
+         max-width: 730px;
+         width: 100%;
+         p:not(:last-child) {
+            margin-bottom: 15px;
+         }
+         .detail__content {
+         }
+      }
+   }
+}
