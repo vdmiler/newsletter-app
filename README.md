@@ -10,7 +10,5 @@ Use in project
 * Yup
 * WP REST API
 
-Example:
-
-App: http://newsletter.websters.ru/
-WP REST API: http://rest.websters.ru/
+`App:` http://newsletter.websters.ru/
+`WP REST API:` http://rest.websters.ru/
