@@ -29,9 +29,33 @@ export function linkCropping(str) {
    return source;
 }
 
+function setStorageWithExpiry(key, value, ttl) {
+   const now = new Date()
+   const item = {
+      value: value,
+      expiry: now.getTime() + ttl,
+   }
+   localStorage.setItem(key, JSON.stringify(item))
+}
+
+function getStorageWithExpiry(key) {
+   const itemStr = localStorage.getItem(key)
+   if (!itemStr) {
+      return null
+   }
+   const item = JSON.parse(itemStr)
+   const now = new Date()
+   if (now.getTime() > item.expiry) {
+      localStorage.removeItem(key)
+      return null
+   }
+   return item.value
+}
+
 export const getTokenKey = async () => {
-   if (localStorage.getItem('token')) {
-      return localStorage.getItem('token');
+   const token = getStorageWithExpiry('token');
+   if (token) {
+      return token;
    } else {
       try {
          const response = await axios({
@@ -46,7 +70,7 @@ export const getTokenKey = async () => {
             }
          })
          const key = await response.data;
-         localStorage.setItem('token', key.token);
+         setStorageWithExpiry('token', key.token, 2400);
          return key.token;
       } catch (error) {
          console.error(error.message)
