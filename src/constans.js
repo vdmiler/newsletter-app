@@ -1,4 +1,4 @@
-export const requestUrl = 'http://rest.websters.ru';
+export const requestUrl = 'https://api.pugilist.pro';
 
 export const menuItems = [
    {
