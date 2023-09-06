@@ -18,6 +18,7 @@ const NewsDetail = props => {
       if (props.location.state !== 0) {
          dispatch(fetchImageData(props.location.state))
       }
+      // eslint-disable-next-line react-hooks/exhaustive-deps
    }, [])
 
    const newsTitle = newsDetail && coloredFirstWord(newsDetail?.title.rendered),

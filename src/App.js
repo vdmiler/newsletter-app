@@ -13,6 +13,7 @@ const App = () => {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(fetchNewsList());
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
   const { newsList, loadingList, errorList } = useSelector(state => state.newsList);
   return (
