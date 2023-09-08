@@ -1,4 +1,4 @@
-export const requestUrl = 'https://api.pugilist.pro';
+export const requestUrl = 'https://api.newsletter.pugilist.pro';
 
 export const menuItems = [
    {
