@@ -10,5 +10,5 @@ Use in project
 * Yup
 * WP REST API
 
-`App:` http://newsletter.websters.ru/
-`WP REST API:` http://rest.websters.ru/
+`App:` https://newsletter.pugilist.pro/
+`WP REST API:` https://api.newsletter.pugilist.pro/
